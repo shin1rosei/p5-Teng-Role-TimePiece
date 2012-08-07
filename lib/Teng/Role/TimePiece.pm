@@ -54,7 +54,9 @@ Teng::Role::TimePiece - using Time::Piece for datetime column
 
 =head1 SYNOPSIS
 
-  use Teng::Role::TimePiece;
+use parent 'Teng';
+use Any::Moose;
+with 'Teng::Role::TimePiece';
 
 =head1 DESCRIPTION
 =head1 AUTHOR
@@ -65,7 +67,13 @@ Shinichiro Sei E<lt>shin1rosei@kayac.comE<gt>
 
 =head1 LICENSE
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+
+Copyright (c) 2012 KAYAC Inc. All rights reserved.
+
+This program is free software; you can redistribute
+it and/or modify it under the same terms as Perl itself.
+
+The full text of the license can be found in the
+LICENSE file included with this module.
 
 =cut
